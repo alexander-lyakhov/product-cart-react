@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+}
+
+body  {
+  font: 13px verdana;
+  color: #eee;
+  background: #808080;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;  /* Konqueror */
+  -moz-user-select: none;    /* Firefox */
+  -ms-user-select: none;     /* IE/Edge */
+  user-select: none;
+}

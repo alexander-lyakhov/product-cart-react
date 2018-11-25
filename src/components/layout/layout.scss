@@ -1,0 +1,59 @@
+.layout {
+    header {
+    	background: #404040;
+    	box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+    	width: 100%;
+    	height: 64px;
+    	display: flex;
+    	align-items: center;
+    	position: fixed;
+    	left: 0;
+    	top: 0;
+    	z-index: 1;
+
+    	.stat {
+    		font-size: 1rem;
+    		margin: 0 20px;
+    		color: #ccc;
+
+    		.value {
+    			color: #eee;
+    			border: 2px solid #c93;
+    			border-radius: 4px;
+    			text-align: center;
+    			min-width: 64px;
+    			display: inline-block;
+    			margin: 0 8px;
+    			padding: 4px 6px;
+    		}
+    	}
+    }
+
+    .grid {
+    	display: flex;
+    	flex-wrap: wrap;
+    	padding-top: 80px;
+
+    	.grid-cell {
+    		min-width: 20%;
+    	}
+    }
+
+    @media screen and (max-width: 1600px) {
+    	.grid .grid-cell {
+    		min-width: 25%;
+    	}
+    }
+
+    @media screen and (max-width: 1280px) {
+    	.grid .grid-cell {
+    		min-width: 33.33%;
+    	}
+    }
+
+    @media screen and (max-width: 930px) {
+    	.grid .grid-cell {
+    		min-width: 50%;
+    	}
+    }
+}
